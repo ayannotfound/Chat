@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f2f5;
+  background: radial-gradient(circle, #e5febc -10%, #c4f8ff 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,8 +8,20 @@ body {
   margin: 0;
 }
 
+a {
+  color: #4a90e2;
+  text-decoration: none;
+  margin: 0 0.3em;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
 #login-container {
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
   padding: 30px 25px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);

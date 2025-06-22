@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
+  background: radial-gradient(circle, #e5febc -10%, #c4f8ff 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 #chat-header {
-  background-color: #ffffff;
+  background-color: #ffffff80;
   border-bottom: 1px solid #ccc;
   padding: 12px 16px;
   display: flex;
@@ -23,7 +23,6 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: 600px;
   z-index: 10;
 }
 
@@ -48,9 +47,8 @@ body {
 }
 
 #chat-container {
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
   width: 95%;
-  max-width: 600px;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -80,6 +78,7 @@ body {
 #message-input {
   flex: 1;
   padding: 12px;
+  background: rgba(255, 255, 255, 0.5);
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
@@ -110,13 +109,13 @@ body {
 }
 
 .my-message {
-  background-color: #dcf8c6;
+  background-color: #00ffe147;
   align-self: flex-end;
   text-align: left;
 }
 
 .other-message {
-  background-color: #f1f1f1;
+  background-color: #f1f1f155;
   align-self: flex-start;
   text-align: left;
 }
