@@ -42,7 +42,7 @@ A full-stack real-time chat application with authentication, built using:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/your-chat-app.git
+   git clone https://github.com/ayannotfound/Chat.git
    cd your-chat-app
    ```
 
