@@ -34,7 +34,7 @@ A full-stack real-time chat application with authentication, built using:
 
 ## 🌍 Deployed Link
 
-🔗 [Live Demo](not yet)
+🔗 [Live Demo](https://chat-4wys.onrender.com)
 
 ---
 
