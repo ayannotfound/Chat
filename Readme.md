@@ -25,6 +25,15 @@ A full-stack real-time chat application with authentication, built using:
 
 ---
 
+## 📱 How It Works
+
+1. Users sign up or log in using email and password.
+2. A secure cookie is set for authentication.
+3. Once logged in, users can send and receive messages in real-time.
+4. Messages are stored in MongoDB with timestamps and user references.
+
+---
+
 ## 📷 Screenshot
 
 ![Chat UI Preview](./screenshots/preview.png)
@@ -43,7 +52,7 @@ A full-stack real-time chat application with authentication, built using:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/ayannotfound/Chat.git
-   cd your-chat-app
+   cd Chat
    ```
 
 2. **Install dependencies**
@@ -109,6 +118,18 @@ A full-stack real-time chat application with authentication, built using:
 - Add avatars or user initials
 - Add "typing..." indicator
 - Add file/image upload support
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
 ---
 
