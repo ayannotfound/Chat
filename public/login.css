@@ -1,0 +1,99 @@
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+#login-container {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+input {
+  padding: 12px;
+  width: 90%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #008cff;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.95em;
+  color: #888;
+  padding: 12px 0;
+  z-index: 20;
+}
+
+.footer a {
+  color: #4a90e2;
+  text-decoration: none;
+  margin: 0 0.3em;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+#error-box {
+  background-color: #ffdddd;
+  color: #a94442;
+  border: 1px solid #e6a5a5;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 0.85em;
+    padding: 8px 0;
+  }
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div id="login-container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <div id="error-box" style="display: none"></div>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+
+      <p>New here? <a href="/signup">Create an account</a></p>
+    </div>
+
+    <script>
+      const form = document.getElementById("login-form");
+      const errorBox = document.getElementById("error-box");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value;
+
+        const res = await fetch("/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
+        });
+
+        const text = await res.text();
+
+        if (text.includes("Invalid")) {
+          errorBox.textContent = text;
+          errorBox.style.display = "block";
+          errorBox.classList.add("error");
+        } else {
+          window.location.href = "/";
+        }
+      });
+    </script>
+  </body>
+</html>
