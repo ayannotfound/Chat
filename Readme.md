@@ -1,6 +1,6 @@
-# 💬 Chat App
+# 💬 ChatRoom
 
-A full-stack real-time chat application with authentication, built using:
+A full-stack real-time chat application with authentication and rich UI enhancements, built using:
 
 - Node.js + Express
 - Socket.IO
@@ -15,22 +15,26 @@ A full-stack real-time chat application with authentication, built using:
 
 - 🔐 User signup and login with hashed passwords
 - 🍪 Cookie-based persistent authentication
-- 💬 Real-time messaging using Socket.IO
-- 🗂 MongoDB database for users and messages
-- 📜 Message history
-- 🧑 Messages grouped by user with timestamp
-- 💻 Fully responsive interface (mobile-friendly)
-- ⚠️ Inline popup form validation errors
-- 🔧 Configurable via `.env` file
+- 💬 Real-time messaging via Socket.IO
+- 📜 Message history from MongoDB
+- 🧑 Messages grouped by sender
+- 🕒 Timestamps and username above each message group
+- 🧠 Typing indicator with animated "..." effect
+- 👤 Avatars using user initials (only shown on first message in group)
+- 📱 Fully responsive UI (mobile-first)
+- ⚠️ Inline form validation + error popups
+- 🔧 Configurable via `.env`
 
 ---
 
 ## 📱 How It Works
 
-1. Users sign up or log in using email and password.
-2. A secure cookie is set for authentication.
-3. Once logged in, users can send and receive messages in real-time.
-4. Messages are stored in MongoDB with timestamps and user references.
+1. Users sign up or log in via form.
+2. A secure cookie is stored for authentication.
+3. Chat messages are sent and received in real time.
+4. Messages are saved in MongoDB with username + timestamp.
+5. Typing indicators appear when users are actively typing.
+6. UI groups messages and avatars per user like WhatsApp.
 
 ---
 
@@ -50,17 +54,21 @@ A full-stack real-time chat application with authentication, built using:
 ## 📦 Installation
 
 1. **Clone the repository**
+
    ```bash
-   git clone https://github.com/ayannotfound/Chat.git
-   cd Chat
+   git clone https://github.com/ayannotfound/ChatRoom.git
+   cd ChatRoom
+   npm install
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Create a `.env` file**
+
    ```env
    MONGO_URI=your_mongodb_connection_string
    ```
@@ -108,15 +116,14 @@ A full-stack real-time chat application with authentication, built using:
 }
 ```
 
-- `npm start` — Run app normally  
+- `npm start` — Run app normally
 - `npm run dev` — Auto-reloads with `nodemon`
 
 ---
 
 ## ✨ TODO
 
-- Add avatars or user initials
-- Add "typing..." indicator
+- Custom avatar uploads
 - Add file/image upload support
 
 ---

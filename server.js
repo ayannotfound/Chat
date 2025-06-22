@@ -86,7 +86,6 @@ io.on("connection", (socket) => {
       socket.emit("chat history", messages);
     });
 
-  // Save and broadcast message
   socket.on("chat message", async (msg) => {
     const message = new Message({
       username: msg.username,
@@ -95,6 +94,10 @@ io.on("connection", (socket) => {
     await message.save();
     io.emit("chat message", message);
   });
+
+  socket.on("typing", (username) => {});
+
+  socket.on("stop typing", (username) => {});
 
   socket.on("disconnect", () => {
     console.log("User disconnected:", socket.id);
