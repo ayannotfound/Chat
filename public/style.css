@@ -294,7 +294,7 @@ body {
   
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #chat-container {
     height: 80vh;
   }
@@ -317,13 +317,15 @@ body {
     font-size: 10px;
   }
 
-  .h1 {
-    font-size: 16px;
+  #chat-header h1 {
+    font-size: 1rem;
   }
 
-  #logout-btn {
-    padding: 6px 10px;
-    font-size: 13px;
+  .button-box {
+    width: 80px;
+    height: 40px;
+  
+    margin-right: 20px;
   }
 
   .footer {
