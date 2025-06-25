@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
+    <div id="box">
     <div id="login-container">
       <h2>Login</h2>
       <form id="login-form">
@@ -17,27 +18,19 @@
           placeholder="Enter your username"
           required
         />
-        <input
-          type="password"
-          id="password"
-          placeholder="Enter your password"
-          required
-        />
-        <button type="submit">Login</button>
+        <input type="password" id="password" placeholder="Enter your password" required/>
+        <div class="bbox"><button type="submit">Log in</button></div>
+        
       </form>
 
       <p>New here? <a href="/signup">Create an account</a></p>
     </div>
-
-    <footer class="footer">
+    </div>
+    <div class="footer">
       Made by Ayan<br />
-      <a href="https://github.com/ayannotfound" target="_blank">GitHub</a> |
-      <a
-        href="https://www.linkedin.com/in/ayush-anand-420590306/"
-        target="_blank"
-        >LinkedIn</a
-      >
-    </footer>
+      <a href="https://github.com/ayannotfound">GitHub</a> |
+      <a href="https://www.linkedin.com/in/ayush-anand-420590306/">LinkedIn</a>
+    </div>
 
     <script>
       const form = document.getElementById("login-form");

@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
     <div id="chat-header">
-      <span id="app-name">💬 ChatRoom</span>
-      <button id="logout-btn">Logout</button>
+      <h1>💬 ChatRoom</h1>
+      <div class="button-box">
+        <button id="logout-btn">Logout</button>
+      </div>
+
     </div>
 
     <div id="chat-container">
@@ -25,16 +29,12 @@
       </form>
     </div>
 
-    <footer class="footer">
+    <div class="footer">
       Made by Ayan<br />
-      <a href="https://github.com/ayannotfound" target="_blank">GitHub</a> |
-      <a
-        href="https://www.linkedin.com/in/ayush-anand-420590306/"
-        target="_blank"
-        >LinkedIn</a
-      >
-    </footer>
-
+      <a href="https://github.com/ayannotfound">GitHub</a> |
+      <a href="https://www.linkedin.com/in/ayush-anand-420590306/">LinkedIn</a>
+    </div>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
   </body>
