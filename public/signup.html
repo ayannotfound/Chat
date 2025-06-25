@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-     <div id="box">
+     <div id="box" data-aos="fade-down">
     <div id="login-container">
       <h2>Sign Up</h2>
       <form id="signup-form">
@@ -65,5 +66,9 @@
         }
       });
     </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

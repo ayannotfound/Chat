@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChatRoom</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="container">
-    <div id="chat-header">
+    <div id="chat-header" data-aos="fade-down">
       <h1>💬 ChatRoom</h1>
       <div class="button-box">
         <button id="logout-btn">Logout</button>
@@ -39,5 +40,9 @@
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
