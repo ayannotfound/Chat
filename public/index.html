@@ -3,46 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChatRoom</title>
+    <title>EchoRoom</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="container">
-    <div id="chat-header" data-aos="fade-down">
-      <h1>💬 ChatRoom</h1>
-      <div class="button-box">
-        <button id="logout-btn">Logout</button>
+      <div id="chat-header" data-aos="fade-down">
+        <h1>💬 EchoRoom</h1>
+        <div class="button-box">
+         <button id="logout-btn">Logout</button>
+       </div>
       </div>
 
-    </div>
+      <div id="chat-container">
+        <div id="messages"></div>
+          <form id="chat-form">
+          <input
+            id="message-input"
+            type="text"
+            placeholder="Type a message..."
+            autocomplete="off"
+          />
+          <div class="button-box2">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
 
-    <div id="chat-container">
-      <div id="messages"></div>
-      <form id="chat-form">
-        <input
-          id="message-input"
-          type="text"
-          placeholder="Type a message..."
-          autocomplete="off"
-        />
-        <div class="button-box2">
-        <button type="submit">Send</button>
-        </div>
-      </form>
-    </div>
-
-    <div class="footer">
-      Made by Ayan<br />
-      <a href="https://github.com/ayannotfound">GitHub</a> |
-      <a href="https://www.linkedin.com/in/ayush-anand-420590306/">LinkedIn</a>
-    </div>
+      <div class="footer">
+        Made by Ayan<br />
+        <a href="https://github.com/ayannotfound">GitHub</a> |
+        <a href="https://www.linkedin.com/in/ayush-anand-420590306/">LinkedIn</a>
+      </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,22 +35,46 @@ body {
   z-index: 10;
 }
 
-#chat-header h1{
+#chat-header h1 {
   color: transparent;
-  background: linear-gradient(to right, #0099ff, #7f42a7, #6600c5, #1f2b9c, #0099ff);
+  background: linear-gradient(
+    to right,
+    #0099ff,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #0099ff
+  );
   background-clip: text;
   background-size: 500%;
 }
 
-.button-box{
+.button-box {
   position: relative;
   width: 100px;
   height: 45px;
   margin-right: 25px;
-  background: linear-gradient(to right, #00aaa7, #7f42a7, #6600c5, #1f2b9c, #0099ff, #00aaa7);
+  background: linear-gradient(
+    to right,
+    #00aaa7,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #0099ff,
+    #00aaa7
+  );
   background-size: 200%;
   animation: GradientAnimation 2.5s ease infinite;
-  clip-path: polygon(0 0, 80% 0%, 100% 30%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    80% 0%,
+    100% 30%,
+    100% 80%,
+    100% 100%,
+    0 100%,
+    0% 80%,
+    0% 20%
+  );
 }
 
 .button-box button {
@@ -60,7 +84,16 @@ body {
   background-color: rgb(14, 12, 21);
   color: lightgray;
   border: none;
-  clip-path: polygon(0 0, 80% 0%, 100% 30%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    80% 0%,
+    100% 30%,
+    100% 80%,
+    100% 100%,
+    0 100%,
+    0% 80%,
+    0% 20%
+  );
   cursor: pointer;
   transition: 0.3s;
 }
@@ -71,10 +104,9 @@ body {
 }
 
 @keyframes GradientAnimation {
-  to{
+  to {
     background-position: 200%;
   }
-  
 }
 
 #chat-container {
@@ -116,12 +148,20 @@ body {
   font-size: 1rem;
 }
 
-.button-box2{
+.button-box2 {
   position: relative;
   width: 75px;
   height: 45px;
   margin-right: 25px;
-  background: linear-gradient(to right, #00aaa7, #7f42a7, #6600c5, #1f2b9c, #0099ff, #00aaa7);
+  background: linear-gradient(
+    to right,
+    #00aaa7,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #0099ff,
+    #00aaa7
+  );
   background-size: 200%;
   animation: GradientAnimation 2.5s ease infinite;
   clip-path: polygon(0% 0%, 80% 0, 100% 50%, 80% 100%, 0% 100%);
@@ -150,15 +190,32 @@ body {
   display: flex;
   flex-direction: column;
   word-break: break-word;
-  clip-path: polygon(0 1%, 100% 0, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0 92%, 0% 20%);
+  clip-path: polygon(
+    0 1%,
+    100% 0,
+    100% 10%,
+    100% 80%,
+    100% 100%,
+    10% 100%,
+    0 92%,
+    0% 20%
+  );
 }
 
 .my-message {
   background-color: #3c00ff81;
   align-self: flex-end;
   text-align: left;
-  clip-path: polygon(0 1%, 100% 0, 100% 10%, 100% 90%, 93% 100%, 11% 100%, 0 100%, 0% 20%);
-
+  clip-path: polygon(
+    0 1%,
+    100% 0,
+    100% 10%,
+    100% 90%,
+    93% 100%,
+    11% 100%,
+    0 100%,
+    0% 20%
+  );
 }
 
 .other-message {
@@ -276,26 +333,32 @@ body {
   text-decoration: none;
   margin: 0 0.3em;
   transition: 0.5s;
-  
 }
 
 .footer a:hover {
   color: transparent;
   font-size: 1.5em;
-  background: linear-gradient(to right, #00aaa7, #7f42a7, #6600c5, #1f2b9c, #0099ff, #00aaa7);
+  background: linear-gradient(
+    to right,
+    #00aaa7,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #0099ff,
+    #00aaa7
+  );
   background-clip: text;
   background-size: 150%;
   animation: Gradient 2.5s infinite;
 }
 
 @keyframes Gradient {
-  to{
+  to {
     background-position: 300%;
   }
-  
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   #chat-container {
     height: 80vh;
   }
@@ -325,7 +388,7 @@ body {
   .button-box {
     width: 80px;
     height: 40px;
-  
+
     margin-right: 20px;
   }
 

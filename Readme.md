@@ -1,4 +1,4 @@
-# 💬 ChatRoom
+# 💬 EchoRoom
 
 A full-stack real-time chat application with authentication and rich UI enhancements, built using:
 
@@ -21,7 +21,7 @@ A full-stack real-time chat application with authentication and rich UI enhancem
 - 🕒 Timestamps and username above each message group
 - 🧠 Typing indicator with animated "..." effect
 - 👤 Avatars using user initials (only shown on first message in group)
-- 📱 Fully responsive UI (mobile-first)
+- 📱 Fully responsive interface with dark neon theme (mobile-friendly)
 - ⚠️ Inline form validation + error popups
 - 🔧 Configurable via `.env`
 

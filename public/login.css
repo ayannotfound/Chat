@@ -25,14 +25,30 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #00aaa7, #7f42a7, #6600c5, #1f2b9c, #0099ff, #00aaa7);
+  background: linear-gradient(
+    to right,
+    #00aaa7,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #0099ff,
+    #00aaa7
+  );
   background-size: 200%;
   animation: GradientAnimation 2.5s ease infinite;
   width: 375px;
   height: 300px;
-  clip-path: polygon(0 0, 90% 0%, 100% 10%, 100% 90%, 100% 100%, 10% 100%, 0% 90%, 0% 10%);
+  clip-path: polygon(
+    0 0,
+    90% 0%,
+    100% 10%,
+    100% 90%,
+    100% 100%,
+    10% 100%,
+    0% 90%,
+    0% 10%
+  );
 }
-
 
 #login-container {
   position: absolute;
@@ -42,7 +58,16 @@ a:hover {
   width: auto;
   max-width: 350px;
   text-align: center;
-  clip-path: polygon(0 0, 90% 0%, 100% 10%, 100% 90%, 100% 100%, 10% 100%, 0% 90%, 0% 10%);
+  clip-path: polygon(
+    0 0,
+    90% 0%,
+    100% 10%,
+    100% 90%,
+    100% 100%,
+    10% 100%,
+    0% 90%,
+    0% 10%
+  );
 }
 
 h2 {
@@ -63,12 +88,20 @@ input {
 button {
   padding: 12px 20px;
   background-color: transparent;
-  color:transparent;
+  color: transparent;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
-  background: linear-gradient(to right, #00aaa7, #7f42a7, #6600c5, #1f2b9c, #0099ff, #00aaa7);
+  background: linear-gradient(
+    to right,
+    #00aaa7,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #0099ff,
+    #00aaa7
+  );
   background-size: 200%;
   background-clip: text;
   animation: GradientAnimation 2.5s infinite;
@@ -80,10 +113,9 @@ button:hover {
 }
 
 @keyframes GradientAnimation {
-  to{
+  to {
     background-position: 200%;
   }
-  
 }
 
 .footer {
@@ -101,13 +133,20 @@ button:hover {
   text-decoration: none;
   margin: 0 0.3em;
   transition: 0.5s;
-  
 }
 
 .footer a:hover {
   color: transparent;
   font-size: 1.5em;
-  background: linear-gradient(to right, #00aaa7, #7f42a7, #6600c5, #1f2b9c, #0099ff, #00aaa7);
+  background: linear-gradient(
+    to right,
+    #00aaa7,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #0099ff,
+    #00aaa7
+  );
   background-clip: text;
   background-size: 150%;
   animation: Gradient 2.5s infinite;
