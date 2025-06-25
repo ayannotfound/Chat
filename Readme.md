@@ -1,6 +1,10 @@
 # 💬 EchoRoom
 
-A full-stack real-time chat application with authentication and rich UI enhancements, built using:
+_A glowing real-time chat app built with Node.js, Socket.IO, MongoDB, and pure JavaScript magic ✨_
+
+---
+
+## 🛠 Tech Stack
 
 - Node.js + Express
 - Socket.IO
@@ -8,6 +12,12 @@ A full-stack real-time chat application with authentication and rich UI enhancem
 - bcrypt for password hashing
 - Cookie-based login
 - HTML, CSS, and Vanilla JavaScript (no frameworks)
+
+---
+
+## 🌍 Deployed Link
+
+🔗 [Live Demo](https://echoroom.onrender.com)
 
 ---
 
@@ -45,20 +55,13 @@ A full-stack real-time chat application with authentication and rich UI enhancem
 
 ---
 
-## 🌍 Deployed Link
-
-🔗 [Live Demo](https://chat-4wys.onrender.com)
-
----
-
 ## 📦 Installation
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/ayannotfound/ChatRoom.git
-   cd ChatRoom
-   npm install
+   git clone https://github.com/ayannotfound/EchoRoom.git
+   cd EchoRoom
    ```
 
 2. **Install dependencies**

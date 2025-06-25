@@ -80,6 +80,7 @@ input {
   width: 90%;
   background-color: transparent;
   margin-bottom: 20px;
+  color: lightgray;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
