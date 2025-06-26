@@ -150,7 +150,7 @@ button:hover {
   );
   background-clip: text;
   background-size: 150%;
-  animation: Gradient 2.5s infinite;
+  animation: GradientAnimation 2.5s infinite;
 }
 
 #error-box {
