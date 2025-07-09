@@ -1,77 +1,64 @@
+
 # 💬 EchoRoom
 
 _A glowing real-time chat app built with Node.js, Socket.IO, MongoDB, and pure JavaScript magic ✨_
 
----
-
-## 🛠 Tech Stack
-
-- Node.js + Express
-- Socket.IO
-- MongoDB + Mongoose
-- bcrypt for password hashing
-- Cookie-based login
-- HTML, CSS, and Vanilla JavaScript (no frameworks)
-
----
-
-## 🌍 Deployed Link
-
-🔗 [Live Demo](https://echoroom.onrender.com)
+> 🌐 [Try it!](https://echoroom.onrender.com)
 
 ---
 
 ## 🚀 Features
 
-- 🔐 User signup and login with hashed passwords
-- 🍪 Cookie-based persistent authentication
-- 💬 Real-time messaging via Socket.IO
-- 📜 Message history from MongoDB
-- 🧑 Messages grouped by sender
-- 🕒 Timestamps and username above each message group
-- 🧠 Typing indicator with animated "..." effect
-- 👤 Avatars using user initials (only shown on first message in group)
-- 📱 Fully responsive interface with dark neon theme (mobile-friendly)
-- ⚠️ Inline form validation + error popups
-- 🔧 Configurable via `.env`
+- 🔐 **Secure Auth**: User signup/login with hashed passwords (bcrypt)
+- 🍪 **Persistent Login**: Cookie-based session authentication
+- 💬 **Real-time Messaging**: Instant Socket.IO chat
+- 📜 **Message History**: MongoDB stores all chat logs
+- 👥 **User Grouping**: Messages grouped with avatars & timestamps
+- 🧠 **Typing Indicator**: Animated “...” while users type
+- 🎨 **Responsive UI**: Neon-themed, mobile-first design
+- ⚠️ **Validation & Feedback**: Inline error alerts on auth
+- 📂 **Project Config**: Environment-based settings via `.env`
 
 ---
 
-## 📱 How It Works
+## 📸 Screenshots
 
-1. Users sign up or log in via form.
-2. A secure cookie is stored for authentication.
-3. Chat messages are sent and received in real time.
-4. Messages are saved in MongoDB with username + timestamp.
-5. Typing indicators appear when users are actively typing.
-6. UI groups messages and avatars per user like WhatsApp.
+<div align="center">
 
----
+<img src="./screenshots/preview.png" alt="Login Screen" width="600" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+<br><br>
+<img src="./screenshots/preview2.png" alt="Chat UI" width="600" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
 
-## 📷 Screenshot
-
-![Chat UI Preview](./screenshots/preview.png)
-![Chat UI Preview](./screenshots/preview2.png)
+</div>
 
 ---
 
-## 📦 Installation
+## 🧩 Tech Stack
+
+- **Backend**: Node.js, Express
+- **Real-Time Engine**: Socket.IO
+- **Database**: MongoDB + Mongoose
+- **Authentication**: bcrypt + cookies
+- **Frontend**: HTML5, CSS3, Vanilla JS
+- **Deployment**: Render.com
+- **Security**: Input validation + session-based access control
+
+---
+
+## 🛠️ Getting Started
 
 1. **Clone the repository**
-
    ```bash
    git clone https://github.com/ayannotfound/EchoRoom.git
    cd EchoRoom
    ```
 
 2. **Install dependencies**
-
    ```bash
    npm install
    ```
 
 3. **Create a `.env` file**
-
    ```env
    MONGO_URI=your_mongodb_connection_string
    ```
@@ -81,29 +68,49 @@ _A glowing real-time chat app built with Node.js, Socket.IO, MongoDB, and pure J
      ```bash
      npm start
      ```
-   - Development (with auto-reload):
+   - Development:
      ```bash
      npm run dev
      ```
 
 ---
 
-## 🗂 Project Structure
+## 🎮 How to Use
+
+1. Open the app and create a new account or log in
+2. Chat in real time with others
+3. Messages display grouped by user, with timestamps and avatars
+4. Typing indicator shows when users are typing
+5. Responsive neon-themed layout that adapts to all screen sizes
+
+---
+
+## 🧠 What I Learned
+
+- Building real-time apps with Socket.IO
+- Securing authentication with bcrypt and cookies
+- MongoDB schema design and message persistence
+- Creating smooth, grouped chat UIs in vanilla JavaScript
+- Implementing typing indicators and user grouping logic
+
+---
+
+## 📁 Project Structure
 
 ```
-.
+EchoRoom/
 ├── models/
-│   ├── Message.js        # Message schema
-│   └── User.js           # User schema with bcrypt
+│   ├── Message.js
+│   └── User.js
 ├── public/
-│   ├── index.html        # Main chat interface
-│   ├── login.html        # Login page
-│   ├── signup.html       # Signup page
-│   ├── login.css         # Auth styling
-│   ├── style.css         # Chat styling
-│   └── script.js         # Frontend chat logic
-├── .env                  # MongoDB connection URI
-├── server.js             # Express + Socket.IO server
+│   ├── index.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── login.css
+│   ├── style.css
+│   └── script.js
+├── .env.example
+├── server.js
 ├── package.json
 └── README.md
 ```
@@ -115,34 +122,27 @@ _A glowing real-time chat app built with Node.js, Socket.IO, MongoDB, and pure J
 ```json
 "scripts": {
   "start": "node server.js",
-  "dev": "nodemon server.js",
+  "dev": "nodemon server.js"
 }
 ```
 
-- `npm start` — Run app normally
-- `npm run dev` — Auto-reloads with `nodemon`
+---
+
+## ✨ Planned Features
+
+- 🖼️ Avatar uploads
+- 📎 File/image sharing
+- 🔔 Notification sounds
 
 ---
 
-## ✨ TODO
+## 📫 Connect With Me
 
-- Custom avatar uploads
-- Add file/image upload support
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+[GitHub](https://github.com/ayannotfound)
+[LinkedIn](https://www.linkedin.com/in/ayush-anand-420590306/)  
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
-
----
-
-## 🧑‍💻 Author
-
-Made by [@ayannotfound](https://github.com/ayannotfound)
+MIT License — free to fork, build, and deploy your own EchoRoom.
